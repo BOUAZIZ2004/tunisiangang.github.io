@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>RULES</title>
+    <link rel="icon" href="logo.icon.svg">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-store fixed-top navbar-fixed-top"
+      data-aos="fade-down"
+      aria-label="Navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="/images/logo.svg" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="true"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"></a>
+            </li>
+          </ul>
+
+          <!-- Desktop Menu -->
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="/images/icon-user.png"
+                  alt=""
+                  class="rounded-circle mr-2 profile-picture"
+                />
+               HELLO
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/dashboard.html">Dashboard</a>
+                <a class="dropdown-item" href="/dashboard-account.html"
+                  >Settings</a
+                >
+                <div class="dropdown-divider"></div>
+                
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-block mt-2" href="#">
+                <img src="/images/icon-cart-empty.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Menu -->
+          <ul class="navbar-nav d-block d-lg-none">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+               HELLO 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-inline-block" href="#">
+                Cart
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="page-content page-details">
+      <section
+        class="store-breadcrumbs"
+        data-aos="fade-down"
+        data-aos-delay="100"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    BOT TG SUPPORT 
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="store-gallery" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="zoom-in">
+              <transition name="slide-fade" mode="out-in">
+                <img
+                  :key="photos[activePhoto].id"
+                  :src="photos[activePhoto].url"
+                  class="w-100 main-image"
+                  alt=""
+                />
+              </transition>
+            </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <div
+                  class="col-3 col-lg-12 mt-2 mt-lg-0"
+                  v-for="(photo, index) in photos"
+                  :key="photo.id"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <a href="#" @click="changeActive(index)">
+                    <img
+                      :src="photo.url"
+                      class="w-100 thumbnail-image"
+                      :class="{ active: index == activePhoto }"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="store-details-container" data-aos="fade-up">
+        <section class="store-heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1>WE ARE TUNISIAN GANG </h1>
+                <div class="owner"> RULES DISCORD</div>
+                <div class="price"></div>
+              </div>
+              <div class="col-lg-2" data-aos="zoom-in">
+                <a
+                  class="btn btn-success nav-link px-4 text-white btn-block mb-3"
+                  href="https://discord.gg/SUBtVk8F6p"
+                  >RULES IN OUR SERVER</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="store-description">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                </p>
+                <p>
+                    Do not use Discord to spam, manipulate engagement, or disrupt other people’s experience, including trying to to influence or disrupt conversations using bots, fake accounts, multiple accounts, or other automation. This includes purchasing or selling methods of artificially increasing membership, such as via advertisements or botting.
+Do not organize, promote, or engage in any illegal or dangerous behavior, such as sexual solicitation, human trafficking, and selling or facilitating the sale of prohibited or potentially dangerous goods (firearms, ammunition, drugs, and controlled substances). These activities are likely to get you kicked off Discord, and may get you reported to law enforcement.
+Do not abuse Discord products in any way, such as selling or purchasing an account or server, or participating in fraudulent Nitro incentives or Boosting activities.
+Do not use self-bots or user-bots. Each account must be associated with a human, not a bot. Self-bots put strain on Discord’s infrastructure and our ability to run our services. For more information, you can read our Developer Policies here.
+Do not mislead Discord’s support teams. Do not make false or malicious reports to Trust & Safety or Customer Support; send multiple reports about the same issue; or ask a group of users to report the same content or issue. These behaviors may result in action being taken on your account.
+If you see any activity that violates these guidelines, our Terms of Service, or our other policies, please report it to us in the Discord mobile app or by filling out this form.
+
+These guidelines will continue to evolve over time. This means we may take action against a user, server, or content that violates the spirit of these guidelines when we encounter a new threat or harm that is not explicitly covered in the current version.
+
+We will always make our best effort to notify you when we update these guidelines, but it is up to you to follow the spirit of them: keep Discord safe and a place for everyone to belong. Thanks for doing your par
+
+                </p>
+                <p>Do not share false or misleading information (otherwise known as misinformation). Content that is false, misleading, and can lead to significant risk of physical or societal harm may not be shared on Discord. We may remove content if we reasonably believe its spread could result in damage to physical infrastructure, injury of others, obstruction of participation in civic processes, or the endangerment of public health.
+                    Do not coordinate or participate in malicious impersonation of an individual or an organization. Satire and parody are okay.
+                    Do not engage in activities intended to cause damage or gain unauthorized access to another user's account, network, or system. This includes impersonating Discord staff, distributing malware, authentication token theft, phishing, DDOS, and other hacking or social engineering techniques.
+                    Do not distribute or provide access to content involving the hacking, cracking, or distribution of stolen goods, pirated content, or accounts. This includes sharing or selling game cheats or hacks
+                </p>
+                <p>Do not harass others or organize, promote, or participate in harassment. Disagreements happen and are normal, but making continuous, repetitive, or severe negative comments or circumventing a block or ban can cross the line into harassment and is not okay.
+                    Do not organize, promote, or participate in hate speech or hateful conduct. It’s unacceptable to attack a person or a community based on attributes such as their race, ethnicity, caste, national origin, sex, gender identity, gender presentation, sexual orientation, religious affiliation, age, serious illness, disabilities, or other protected classifications.
+                    Do not make threats of violence or threaten to harm others. This includes indirect or suggestive threats, as well as sharing or threatening to share someone’s personally identifiable information (also known as doxxing).
+                    Do not use Discord for the organization, promotion, or support of violent extremism. This also includes glorifying violent events, the perpetrators of violent acts, or similar behaviors.
+                    Do not sexualize children in any way. You cannot share content or links which depict children in a pornographic, sexually suggestive, or violent manner, including illustrated or digitally altered pornography that depicts children (such as lolicon, shotacon, or cub) and conduct grooming behaviors. We report illegal content and grooming to the National Center for Missing and Exploited Children.
+                    We strongly discourage and may take action against vigilante behavior, as it can interfere with our investigation and ability to report to law enforcement.
+                    Do not make adult content available to anyone under the age of 18. You must be age 18 or older to participate in adult content on Discord. You must apply the age-restricted label to any channels or servers if they contain adult content or other restricted content such as violent content.
+                    Do not use adult content in avatars, server banners, server icons, invite splashes, emoji, stickers, or any other space that cannot be age-restricted.
+                    Do not share sexually explicit content of other people without their consent, or promote the sharing of non-consensual intimate materials (images, video, or audio), sometimes known as revenge porn.
+                    Do not share content that glorifies or promotes suicide or self-harm, including any encouragement to others to cut themselves or embrace eating disorders such as anorexia or bulimia.
+                    Self-harm threats used as a form of emotional manipulation or coercion are also prohibited.
+                    Do not share real media depicting gore, excessive violence, or animal harm, especially with the intention to harass or shock others.
+                    Do not share content that violates anyone's intellectual property or other rights.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="store-review">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-8 mt-3 mb-3">
+                <h5></h5>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img
+                      src="/images/icon-testimonial-1.png"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1"></h5>
+                     
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img
+                      src="https://top.gg/_next/image?url=https%3A%2F%2Fimages.discordapp.net%2Ficons%2F963933542591627264%2F652f459c13d7b5ea153185109610dbb9.png%3Fsize%3D128&w=128&q=75"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1"></h5>
+                     
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img
+                      src="/images/icon-testimonial-3.png"
+                      class="mr-3 rounded-circle"
+                      alt=""
+                    />
+                    <div class="media-body">
+                      <h5 class="mt-2 mb-1"></h5>
+                      <iframe src="https://discord.com/widget?id=963933542591627264&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                      
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="pt-4 pb-2">
+              2022 Copyright TUNISIAN GANG. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 3,
+          photos: [
+            {
+              id: 1,
+              url: "/images/product-details-1.jpg",
+            },
+            {
+              id: 2,
+              url: "/images/product-details-2.jpg",
+            },
+            {
+              id: 3,
+              url: "/images/product-details-3.jpg",
+            },
+            {
+              id: 4,
+              url: "/images/product-details-4.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id) {
+            this.activePhoto = id;
+          },
+        },
+      });
+    </script>
+    <script src="/script/navbar-scroll.js"></script>
+  </body>
+</html>
